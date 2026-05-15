@@ -1,3 +1,8 @@
+export const metadata = {
+  title: 'BAR-IA | IA para bares y restaurantes',
+  description: 'Convierte las mesas de tu bar en una experiencia inteligente con inteligencia artificial.',
+}
+
 export default function BarIA() {
   const features = [
     {
@@ -282,4 +287,3 @@ export default function BarIA() {
     </div>
   )
 }
-
