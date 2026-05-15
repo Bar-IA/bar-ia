@@ -188,7 +188,7 @@ export default function BarIA() {
 
       <div className="relative z-10">
 
-        <div className="w-16 h-16 rounded-2xl bg-[#2563FF]/10 border border-[#2563FF]/20 flex items-center justify-center text-3xl mb-8">
+        <<div className="w-16 h-16 rounded-2xl bg-[#2563FF]/10 border border-[#2563FF]/20 flex items-center justify-center text-3xl mb-8 mx-auto">
           ⭐
         </div>
 
