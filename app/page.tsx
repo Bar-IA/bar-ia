@@ -164,6 +164,82 @@ export default function BarIA() {
         </div>
       </section>
 
+<section className="relative z-10 max-w-7xl mx-auto px-6 py-10 lg:py-16">
+  <div className="text-center max-w-3xl mx-auto mb-14">
+    <p className="text-sm font-semibold tracking-[0.2em] uppercase text-[#2563FF]">
+      RESULTADOS ESTIMADOS
+    </p>
+
+    <h2 className="mt-4 text-4xl lg:text-5xl font-black leading-tight">
+      Impacto real en tu negocio
+    </h2>
+
+    <p className="mt-6 text-xl text-neutral-500 leading-relaxed">
+      Automatización orientada a mejorar experiencia, reputación y ventas.
+    </p>
+  </div>
+
+  <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+    <div className="rounded-3xl border border-black/10 bg-white p-8 shadow-sm hover:shadow-xl transition-all duration-300">
+      <p className="text-5xl font-black text-[#2563FF]">
+        +37%
+      </p>
+
+      <h3 className="mt-4 text-xl font-bold">
+        Más reseñas positivas
+      </h3>
+
+      <p className="mt-3 text-neutral-500 leading-relaxed">
+        Captación automática de clientes satisfechos.
+      </p>
+    </div>
+
+    <div className="rounded-3xl border border-black/10 bg-white p-8 shadow-sm hover:shadow-xl transition-all duration-300">
+      <p className="text-5xl font-black text-[#2563FF]">
+        +12%
+      </p>
+
+      <h3 className="mt-4 text-xl font-bold">
+        Incremento ticket medio
+      </h3>
+
+      <p className="mt-3 text-neutral-500 leading-relaxed">
+        Recomendaciones inteligentes y upselling automático.
+      </p>
+    </div>
+
+    <div className="rounded-3xl border border-black/10 bg-white p-8 shadow-sm hover:shadow-xl transition-all duration-300">
+      <p className="text-5xl font-black text-[#2563FF]">
+        +68%
+      </p>
+
+      <h3 className="mt-4 text-xl font-bold">
+        Más interacción turística
+      </h3>
+
+      <p className="mt-3 text-neutral-500 leading-relaxed">
+        Atención multiidioma para clientes internacionales.
+      </p>
+    </div>
+
+    <div className="rounded-3xl border border-black/10 bg-white p-8 shadow-sm hover:shadow-xl transition-all duration-300">
+      <p className="text-5xl font-black text-[#2563FF]">
+        -40%
+      </p>
+
+      <h3 className="mt-4 text-xl font-bold">
+        Menos tiempo de decisión
+      </h3>
+
+      <p className="mt-3 text-neutral-500 leading-relaxed">
+        Tus clientes saben qué pedir antes de que llegue el camarero.
+      </p>
+    </div>
+
+  </div>
+</section>
+
       <section className="relative z-10 max-w-7xl mx-auto px-6 py-24">
         <div className="text-center max-w-3xl mx-auto mb-20">
           <h2 className="text-4xl lg:text-6xl font-black leading-tight">
