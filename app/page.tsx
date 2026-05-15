@@ -64,20 +64,12 @@ export default function BarIA() {
 
       <header className="relative z-20 border-b border-white/10 backdrop-blur-xl bg-white/5">
         <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
-          <div className="flex items-center gap-2 select-none">
-            <span className="text-4xl lg:text-5xl font-black tracking-[-0.08em] text-white">
-              BAR
-            </span>
-
-            <span className="text-4xl lg:text-5xl font-black tracking-[-0.08em] bg-gradient-to-r from-cyan-300 via-cyan-400 to-blue-500 bg-clip-text text-transparent">
-              -IA
-            </span>
-
-            <span className="text-sm lg:text-base font-bold text-cyan-300 self-end mb-1">
-              .es
-            </span>
-          </div>
-
+          
+<img
+  src="/logo.png"
+  alt="BAR-IA"
+  className="h-14 lg:h-16 w-auto object-contain"
+/>
           <a
             href="https://wa.me/message/WU3DVEAG2LTSE1"
             target="_blank"
