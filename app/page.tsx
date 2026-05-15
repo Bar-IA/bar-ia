@@ -164,100 +164,125 @@ export default function BarIA() {
         </div>
       </section>
 
-<section className="relative z-10 max-w-7xl mx-auto px-6 py-10 lg:py-16">
-  <div className="text-center max-w-3xl mx-auto mb-14">
-    <p className="text-sm font-semibold tracking-[0.2em] uppercase text-[#2563FF]">
+<section className="relative z-10 max-w-7xl mx-auto px-6 py-20">
+
+  <div className="text-center max-w-3xl mx-auto mb-20">
+    <p className="text-sm font-semibold tracking-[0.25em] uppercase text-[#2563FF]">
       RESULTADOS ESTIMADOS
     </p>
 
-    <h2 className="mt-4 text-4xl lg:text-5xl font-black leading-tight">
+    <h2 className="mt-5 text-5xl lg:text-6xl font-black leading-tight text-white">
       Impacto real en tu negocio
     </h2>
 
-    <p className="mt-6 text-xl text-neutral-500 leading-relaxed">
+    <p className="mt-6 text-xl text-neutral-400 leading-relaxed">
       Automatización orientada a mejorar experiencia, reputación y ventas.
     </p>
   </div>
 
-  <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+  <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-7">
 
-  <div className="group rounded-[2rem] border border-black/10 bg-white/70 backdrop-blur-xl p-8 hover:-translate-y-2 hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-500">
-    
-    <div className="w-14 h-14 rounded-2xl bg-blue-500/10 flex items-center justify-center text-3xl mb-8">
-      ⭐
+    <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.03] backdrop-blur-2xl p-8 hover:border-[#2563FF]/30 transition-all duration-500 hover:-translate-y-2 group">
+
+      <div className="absolute top-0 right-0 w-32 h-32 bg-[#2563FF]/10 blur-3xl rounded-full" />
+
+      <div className="relative z-10">
+
+        <div className="w-16 h-16 rounded-2xl bg-[#2563FF]/10 border border-[#2563FF]/20 flex items-center justify-center text-3xl mb-8">
+          ⭐
+        </div>
+
+        <p className="text-6xl font-black tracking-tight text-[#2563FF]">
+          +37%
+        </p>
+
+        <h3 className="mt-5 text-2xl font-bold text-white">
+          Más reseñas
+        </h3>
+
+        <p className="mt-4 text-neutral-400 leading-relaxed">
+          Captación automática de clientes satisfechos.
+        </p>
+
+      </div>
     </div>
 
-    <p className="text-6xl font-black tracking-tight text-[#2563FF]">
-      +37%
-    </p>
+    <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.03] backdrop-blur-2xl p-8 hover:border-[#2563FF]/30 transition-all duration-500 hover:-translate-y-2 group">
 
-    <h3 className="mt-5 text-2xl font-bold">
-      Más reseñas
-    </h3>
+      <div className="absolute top-0 right-0 w-32 h-32 bg-[#2563FF]/10 blur-3xl rounded-full" />
 
-    <p className="mt-4 text-neutral-500 leading-relaxed">
-      Captación automática de clientes satisfechos.
-    </p>
-  </div>
+      <div className="relative z-10">
 
-  <div className="group rounded-[2rem] border border-black/10 bg-white/70 backdrop-blur-xl p-8 hover:-translate-y-2 hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-500">
-    
-    <div className="w-14 h-14 rounded-2xl bg-blue-500/10 flex items-center justify-center text-3xl mb-8">
-      📈
+        <div className="w-16 h-16 rounded-2xl bg-[#2563FF]/10 border border-[#2563FF]/20 flex items-center justify-center text-3xl mb-8">
+          📈
+        </div>
+
+        <p className="text-6xl font-black tracking-tight text-[#2563FF]">
+          +12%
+        </p>
+
+        <h3 className="mt-5 text-2xl font-bold text-white">
+          Ticket medio
+        </h3>
+
+        <p className="mt-4 text-neutral-400 leading-relaxed">
+          Recomendaciones inteligentes y upselling automático.
+        </p>
+
+      </div>
     </div>
 
-    <p className="text-6xl font-black tracking-tight text-[#2563FF]">
-      +12%
-    </p>
+    <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.03] backdrop-blur-2xl p-8 hover:border-[#2563FF]/30 transition-all duration-500 hover:-translate-y-2 group">
 
-    <h3 className="mt-5 text-2xl font-bold">
-      Ticket medio
-    </h3>
+      <div className="absolute top-0 right-0 w-32 h-32 bg-[#2563FF]/10 blur-3xl rounded-full" />
 
-    <p className="mt-4 text-neutral-500 leading-relaxed">
-      Recomendaciones inteligentes y upselling automático.
-    </p>
-  </div>
+      <div className="relative z-10">
 
-  <div className="group rounded-[2rem] border border-black/10 bg-white/70 backdrop-blur-xl p-8 hover:-translate-y-2 hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-500">
-    
-    <div className="w-14 h-14 rounded-2xl bg-blue-500/10 flex items-center justify-center text-3xl mb-8">
-      🌍
+        <div className="w-16 h-16 rounded-2xl bg-[#2563FF]/10 border border-[#2563FF]/20 flex items-center justify-center text-3xl mb-8">
+          🌍
+        </div>
+
+        <p className="text-6xl font-black tracking-tight text-[#2563FF]">
+          +68%
+        </p>
+
+        <h3 className="mt-5 text-2xl font-bold text-white">
+          Turismo
+        </h3>
+
+        <p className="mt-4 text-neutral-400 leading-relaxed">
+          Atención multiidioma para clientes internacionales.
+        </p>
+
+      </div>
     </div>
 
-    <p className="text-6xl font-black tracking-tight text-[#2563FF]">
-      +68%
-    </p>
+    <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.03] backdrop-blur-2xl p-8 hover:border-[#2563FF]/30 transition-all duration-500 hover:-translate-y-2 group">
 
-    <h3 className="mt-5 text-2xl font-bold">
-      Turismo
-    </h3>
+      <div className="absolute top-0 right-0 w-32 h-32 bg-[#2563FF]/10 blur-3xl rounded-full" />
 
-    <p className="mt-4 text-neutral-500 leading-relaxed">
-      Atención multiidioma para clientes internacionales.
-    </p>
-  </div>
+      <div className="relative z-10">
 
-  <div className="group rounded-[2rem] border border-black/10 bg-white/70 backdrop-blur-xl p-8 hover:-translate-y-2 hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-500">
-    
-    <div className="w-14 h-14 rounded-2xl bg-blue-500/10 flex items-center justify-center text-3xl mb-8">
-      ⚡
+        <div className="w-16 h-16 rounded-2xl bg-[#2563FF]/10 border border-[#2563FF]/20 flex items-center justify-center text-3xl mb-8">
+          ⚡
+        </div>
+
+        <p className="text-6xl font-black tracking-tight text-[#2563FF]">
+          -40%
+        </p>
+
+        <h3 className="mt-5 text-2xl font-bold text-white">
+          Tiempo decisión
+        </h3>
+
+        <p className="mt-4 text-neutral-400 leading-relaxed">
+          Tus clientes saben qué pedir antes de que llegue el camarero.
+        </p>
+
+      </div>
     </div>
 
-    <p className="text-6xl font-black tracking-tight text-[#2563FF]">
-      -40%
-    </p>
-
-    <h3 className="mt-5 text-2xl font-bold">
-      Tiempo decisión
-    </h3>
-
-    <p className="mt-4 text-neutral-500 leading-relaxed">
-      Tus clientes saben qué pedir antes de que llegue el camarero.
-    </p>
   </div>
-
-</div>
 </section>
 
       <section className="relative z-10 max-w-7xl mx-auto px-6 py-24">
