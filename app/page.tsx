@@ -259,7 +259,7 @@ export default function BarIA() {
   <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-6">
     
     <img
-      src="/logo-blanco.png"
+      src="/logo_blanco.png"
       alt="BAR-IA"
       className="h-16 w-auto object-contain"
     />
