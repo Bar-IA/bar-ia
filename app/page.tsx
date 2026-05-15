@@ -255,20 +255,21 @@ export default function BarIA() {
         </div>
       </section>
 
-      <footer className="relative z-10 border-t border-white/10 py-12 px-6">
-        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-6">
-          <div className="flex items-center gap-1">
-            
-<img
-  src="/logo_blanco.png"
-  alt="BAR-IA"
-  className="h-14 lg:h-16 w-auto object-contain"
-/>
-          <p className="text-neutral-500 text-center lg:text-right">
-            IA para bares y restaurantes • Experiencias inteligentes en mesa
-          </p>
-        </div>
-      </footer>
+      <footer className="relative z-10 border-t border-black/10 py-12 px-6 bg-black/[0.02]">
+  <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-6">
+    
+    <img
+      src="/logo-baria.png"
+      alt="BAR-IA"
+      className="h-16 w-auto object-contain"
+    />
+
+    <p className="text-neutral-500 text-center lg:text-right text-sm">
+      Automatización • Sistemas • Resultados
+    </p>
+
+  </div>
+</footer>
     </div>
   )
 }
