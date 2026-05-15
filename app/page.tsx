@@ -68,7 +68,7 @@ export default function BarIA() {
 <img
   src="/logo_blanco.png"
   alt="BAR-IA"
-  className="h-14 lg:h-16 w-auto object-contain"
+  className="h-24 lg:h-32 w-auto object-contain"
 />
           <a
             href="https://wa.me/message/WU3DVEAG2LTSE1"
@@ -258,19 +258,12 @@ export default function BarIA() {
       <footer className="relative z-10 border-t border-white/10 py-12 px-6">
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-1">
-            <span className="text-3xl font-black tracking-[-0.08em] text-white">
-              BAR
-            </span>
-
-            <span className="text-3xl font-black tracking-[-0.08em] bg-gradient-to-r from-cyan-300 via-cyan-400 to-blue-500 bg-clip-text text-transparent">
-              -IA
-            </span>
-
-            <span className="text-sm font-bold text-cyan-300 self-end mb-1">
-              .es
-            </span>
-          </div>
-
+            
+<img
+  src="/logo_blanco.png"
+  alt="BAR-IA"
+  className="h-14 lg:h-16 w-auto object-contain"
+/>
           <p className="text-neutral-500 text-center lg:text-right">
             IA para bares y restaurantes • Experiencias inteligentes en mesa
           </p>
