@@ -66,7 +66,7 @@ export default function BarIA() {
         <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
           
 <img
-  src="/logo.png"
+  src="/logo_blanco.png"
   alt="BAR-IA"
   className="h-14 lg:h-16 w-auto object-contain"
 />
