@@ -78,9 +78,11 @@ export default function BarIA() {
 
   return (
     <div className="min-h-screen bg-black text-white overflow-hidden relative">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(37,99,255,0.16),transparent_40%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(37,99,255,0.14),transparent_40%)]" />
 
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[900px] h-[900px] bg-[#2563FF]/10 blur-[140px] rounded-full" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[1000px] bg-[#2563FF]/10 blur-[160px] rounded-full" />
+
+      <div className="absolute inset-0 opacity-[0.03] bg-[url('https://grainy-gradients.vercel.app/noise.svg')]" />
 
       <header className="fixed top-0 left-0 w-full z-50 backdrop-blur-2xl bg-black/20 border-b border-white/5">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
@@ -113,16 +115,16 @@ export default function BarIA() {
             ✦ IA CONVERSACIONAL PARA HOSTELERÍA
           </div>
 
-          <h1 className="text-5xl lg:text-7xl font-black leading-[0.92] tracking-tight">
+          <h1 className="text-5xl lg:text-7xl font-black leading-[0.9] tracking-tight max-w-3xl">
             Convierte cada mesa en una{" "}
             <span className="text-[#2563FF]">
               experiencia inteligente.
             </span>
           </h1>
 
-          <p className="mt-8 text-xl text-neutral-400 leading-relaxed max-w-xl">
-            IA para bares y restaurantes que recomienda, responde y aumenta el
-            ticket medio de cada mesa.
+          <p className="mt-8 text-xl text-neutral-400 leading-relaxed max-w-lg">
+            IA para bares y restaurantes que recomienda, responde y mejora la
+            experiencia de cada cliente.
           </p>
 
           <div className="flex flex-wrap gap-4 mt-10">
@@ -151,18 +153,18 @@ export default function BarIA() {
         </div>
 
         <div
-          className={`relative transition-all duration-1000 delay-300 ${
+          className={`relative -mt-6 lg:-mt-16 transition-all duration-1000 delay-300 ${
             isVisible
               ? "opacity-100 translate-y-0"
               : "opacity-0 translate-y-10"
           }`}
         >
-          <div className="absolute inset-0 bg-[#2563FF]/20 blur-[100px] rounded-full" />
+          <div className="absolute inset-0 bg-[#2563FF]/20 blur-[120px] rounded-full" />
 
           <img
             src="/mockup-baria.png"
             alt="BAR-IA"
-            className="relative z-10 w-full rounded-[2.5rem] shadow-[0_0_120px_rgba(37,99,255,0.18)] animate-[float_6s_ease-in-out_infinite]"
+            className="relative z-10 w-full scale-110 rounded-[2.5rem] shadow-[0_0_120px_rgba(37,99,255,0.18)] animate-[float_6s_ease-in-out_infinite]"
           />
         </div>
       </section>
@@ -186,8 +188,10 @@ export default function BarIA() {
           {kpis.map((kpi, index) => (
             <div
               key={index}
-              className="group relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.03] backdrop-blur-2xl p-6 lg:p-8 hover:border-[#2563FF]/30 transition-all duration-500 hover:-translate-y-2"
+              className="group relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.02] backdrop-blur-3xl p-6 lg:p-8 hover:border-[#2563FF]/30 transition-all duration-500 hover:-translate-y-2"
             >
+              <div className="absolute inset-0 bg-gradient-to-b from-white/[0.03] to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500" />
+
               <div className="absolute top-0 right-0 w-32 h-32 bg-[#2563FF]/10 blur-3xl rounded-full opacity-0 group-hover:opacity-100 transition-all duration-500" />
 
               <div className="relative z-10 text-center">
@@ -246,7 +250,7 @@ export default function BarIA() {
           ].map((step, index) => (
             <div
               key={index}
-              className="group rounded-[2rem] border border-white/10 bg-white/[0.03] backdrop-blur-xl p-10 text-center hover:border-[#2563FF]/30 transition-all duration-300 hover:-translate-y-2"
+              className="group rounded-[2rem] border border-white/10 bg-white/[0.02] backdrop-blur-3xl p-10 text-center hover:border-[#2563FF]/30 transition-all duration-300 hover:-translate-y-2"
             >
               <div className="w-20 h-20 rounded-3xl bg-[#2563FF]/10 border border-[#2563FF]/20 flex items-center justify-center text-4xl mx-auto mb-8 group-hover:scale-110 transition-all duration-300">
                 {step.icon}
@@ -267,19 +271,37 @@ export default function BarIA() {
       <section className="relative z-10 max-w-7xl mx-auto px-6 py-24">
         <div className="text-center max-w-3xl mx-auto mb-20">
           <p className="text-sm font-semibold tracking-[0.25em] uppercase text-[#2563FF]">
-            TODO LO QUE TU NEGOCIO NECESITA
+            IDEAL PARA
           </p>
 
           <h2 className="mt-5 text-5xl lg:text-6xl font-black leading-tight">
-            Mucho más que una carta digital
+            Diseñado para hostelería moderna
           </h2>
+        </div>
+
+        <div className="flex flex-wrap justify-center gap-4 mb-20">
+          {[
+            "Gastrobares",
+            "Beach Clubs",
+            "Rooftops",
+            "Restaurantes",
+            "Bares modernos",
+            "Hoteles",
+          ].map((item, index) => (
+            <div
+              key={index}
+              className="px-6 py-3 rounded-2xl border border-white/10 bg-white/[0.03] text-neutral-300 backdrop-blur-xl"
+            >
+              {item}
+            </div>
+          ))}
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((feature, index) => (
             <div
               key={index}
-              className="group rounded-[2rem] border border-white/10 bg-white/[0.03] backdrop-blur-xl p-8 hover:border-[#2563FF]/30 transition-all duration-300 hover:-translate-y-2"
+              className="group rounded-[2rem] border border-white/10 bg-white/[0.02] backdrop-blur-3xl p-8 hover:border-[#2563FF]/30 transition-all duration-300 hover:-translate-y-2"
             >
               <div className="w-16 h-16 rounded-2xl bg-[#2563FF]/10 border border-[#2563FF]/20 flex items-center justify-center text-3xl mb-8 group-hover:scale-110 transition-all duration-300">
                 {feature.icon}
@@ -306,7 +328,7 @@ export default function BarIA() {
               ¿LISTO PARA EMPEZAR?
             </p>
 
-            <h2 className="mt-6 text-5xl lg:text-7xl font-black leading-[0.95]">
+            <h2 className="mt-6 text-5xl lg:text-7xl font-black leading-[0.92]">
               Convierte tus mesas en una experiencia inteligente.
             </h2>
 
@@ -335,7 +357,9 @@ export default function BarIA() {
           />
 
           <div className="text-center lg:text-right">
-            
+            <p className="text-neutral-400 text-sm">
+              contacto@bar-ia.com
+            </p>
 
             <p className="text-neutral-600 text-sm mt-2">
               IA para bares y restaurantes
