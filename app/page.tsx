@@ -335,9 +335,7 @@ export default function BarIA() {
           />
 
           <div className="text-center lg:text-right">
-            <p className="text-neutral-400 text-sm">
-              contacto@bar-ia.com
-            </p>
+            
 
             <p className="text-neutral-600 text-sm mt-2">
               IA para bares y restaurantes
