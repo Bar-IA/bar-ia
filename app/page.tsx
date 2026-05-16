@@ -1,4 +1,14 @@
+"use client"
+
+import { useEffect, useState } from "react"
+
 export default function BarIA() {
+  const [isVisible, setIsVisible] = useState(false)
+
+  useEffect(() => {
+    setIsVisible(true)
+  }, [])
+
   const kpis = [
     {
       icon: "⭐",
@@ -56,115 +66,129 @@ export default function BarIA() {
       icon: "🧠",
       title: "Recomendaciones inteligentes",
       description:
-        "Sugiere platos, bebidas y combinaciones según el cliente y el momento del día.",
+        "Sugiere platos y bebidas según gustos y momento del día.",
     },
     {
       icon: "⚡",
-      title: "Fácil de usar",
+      title: "Sin apps",
       description:
-        "Sin instalaciones complejas. Enchufar, pegar el QR y listo.",
+        "Solo escanear y preguntar. Sin descargas ni instalaciones.",
     },
   ]
 
   return (
     <div className="min-h-screen bg-black text-white overflow-hidden relative">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(37,99,255,0.18),transparent_40%)]" />
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[900px] h-[900px] bg-[#2563FF]/10 blur-[120px] rounded-full" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(37,99,255,0.16),transparent_40%)]" />
 
-      <header className="relative z-20 border-b border-white/10 backdrop-blur-xl bg-black/40 sticky top-0">
-        <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
-          <div className="flex items-center gap-4">
-            <img
-              src="/logo_blanco.png"
-              alt="BAR-IA"
-              className="h-20 lg:h-24 w-auto object-contain"
-            />
-          </div>
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[900px] h-[900px] bg-[#2563FF]/10 blur-[140px] rounded-full" />
+
+      <header className="fixed top-0 left-0 w-full z-50 backdrop-blur-2xl bg-black/20 border-b border-white/5">
+        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+          <img
+            src="/logo_blanco.png"
+            alt="BAR-IA"
+            className="h-14 lg:h-16 w-auto object-contain"
+          />
 
           <a
             href="https://wa.me/message/WU3DVEAG2LTSE1"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-6 py-3 rounded-2xl bg-[#2563FF] hover:bg-blue-500 transition-all duration-300 font-semibold text-white shadow-xl shadow-blue-500/20"
+            className="px-6 py-3 rounded-2xl bg-[#2563FF] hover:bg-blue-500 transition-all duration-300 font-semibold shadow-2xl shadow-blue-500/20 hover:scale-105"
           >
             Solicitar demo
           </a>
         </div>
       </header>
 
-      <section className="relative z-10 max-w-7xl mx-auto px-6 py-20 lg:py-28 grid lg:grid-cols-2 gap-16 items-center">
-        <div>
+      <section className="relative z-10 max-w-7xl mx-auto px-6 pt-36 pb-24 lg:pb-32 grid lg:grid-cols-2 gap-20 items-center">
+        <div
+          className={`transition-all duration-1000 ${
+            isVisible
+              ? "opacity-100 translate-y-0"
+              : "opacity-0 translate-y-10"
+          }`}
+        >
           <div className="inline-flex items-center gap-2 border border-[#2563FF]/20 bg-[#2563FF]/10 px-4 py-2 rounded-full text-sm text-[#2563FF] font-semibold mb-8">
-            ✦ LA IA QUE VENDE POR TI
+            ✦ IA CONVERSACIONAL PARA HOSTELERÍA
           </div>
 
-          <h1 className="text-5xl lg:text-7xl font-black leading-[0.95] tracking-tight">
-            Convierte cada mesa en más{" "}
-            <span className="text-[#2563FF]">ventas</span> y mejores reseñas.
+          <h1 className="text-5xl lg:text-7xl font-black leading-[0.92] tracking-tight">
+            Convierte cada mesa en una{" "}
+            <span className="text-[#2563FF]">
+              experiencia inteligente.
+            </span>
           </h1>
 
-          <p className="mt-8 text-xl text-neutral-400 leading-relaxed max-w-2xl">
-            BAR-IA es el asistente inteligente para bares y restaurantes que
-            recomienda productos, mejora la experiencia del cliente y automatiza
-            las reseñas.
+          <p className="mt-8 text-xl text-neutral-400 leading-relaxed max-w-xl">
+            IA para bares y restaurantes que recomienda, responde y aumenta el
+            ticket medio de cada mesa.
           </p>
 
           <div className="flex flex-wrap gap-4 mt-10">
             <a
               href="https://wa.me/message/WU3DVEAG2LTSE1"
               target="_blank"
-              className="px-8 py-4 rounded-2xl bg-[#2563FF] hover:bg-blue-500 transition-all duration-300 font-semibold shadow-2xl shadow-blue-500/20"
+              className="px-8 py-4 rounded-2xl bg-[#2563FF] hover:bg-blue-500 transition-all duration-300 font-semibold shadow-2xl shadow-blue-500/20 hover:scale-105"
             >
-              Solicitar demo gratuita
+              Solicitar demo
             </a>
 
             <a
               href="https://chatgpt.com/g/g-6a06e1bf26108191b785ae56333c53f5-bar-progreso-2-0"
               target="_blank"
-              className="px-8 py-4 rounded-2xl border border-white/10 hover:border-[#2563FF]/40 bg-white/[0.03] hover:bg-white/[0.06] transition-all duration-300 font-semibold"
+              className="px-8 py-4 rounded-2xl border border-white/10 bg-white/[0.03] hover:border-[#2563FF]/40 hover:bg-white/[0.06] transition-all duration-300 font-semibold"
             >
               Ver ejemplo real
             </a>
           </div>
 
-          <div className="flex flex-wrap gap-6 mt-8 text-neutral-400 text-sm">
+          <div className="flex flex-wrap gap-6 mt-10 text-neutral-500 text-sm">
             <span>◉ Sin apps</span>
             <span>◉ Sin descargas</span>
             <span>◉ Solo escanear</span>
           </div>
         </div>
 
-        <div className="relative flex justify-center">
+        <div
+          className={`relative transition-all duration-1000 delay-300 ${
+            isVisible
+              ? "opacity-100 translate-y-0"
+              : "opacity-0 translate-y-10"
+          }`}
+        >
+          <div className="absolute inset-0 bg-[#2563FF]/20 blur-[100px] rounded-full" />
+
           <img
             src="/mockup-baria.png"
-            alt="BAR-IA Mockup"
-            className="w-full max-w-3xl rounded-[2rem] shadow-2xl shadow-blue-500/10"
+            alt="BAR-IA"
+            className="relative z-10 w-full rounded-[2.5rem] shadow-[0_0_120px_rgba(37,99,255,0.18)] animate-[float_6s_ease-in-out_infinite]"
           />
         </div>
       </section>
 
-      <section className="relative z-10 max-w-7xl mx-auto px-6 py-20">
+      <section className="relative z-10 max-w-7xl mx-auto px-6 py-24">
         <div className="text-center max-w-3xl mx-auto mb-20">
           <p className="text-sm font-semibold tracking-[0.25em] uppercase text-[#2563FF]">
             RESULTADOS ESTIMADOS
           </p>
 
-          <h2 className="mt-5 text-5xl lg:text-6xl font-black leading-tight text-white">
+          <h2 className="mt-5 text-5xl lg:text-6xl font-black leading-tight">
             Impacto real en tu negocio
           </h2>
 
           <p className="mt-6 text-xl text-neutral-400 leading-relaxed">
-            Automatización orientada a mejorar experiencia, reputación y ventas.
+            Automatización enfocada en ventas, experiencia y reputación.
           </p>
         </div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-7">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-5">
           {kpis.map((kpi, index) => (
             <div
               key={index}
-              className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.03] backdrop-blur-2xl p-6 lg:p-8 hover:border-[#2563FF]/30 transition-all duration-500 hover:-translate-y-2"
+              className="group relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.03] backdrop-blur-2xl p-6 lg:p-8 hover:border-[#2563FF]/30 transition-all duration-500 hover:-translate-y-2"
             >
-              <div className="absolute top-0 right-0 w-32 h-32 bg-[#2563FF]/10 blur-3xl rounded-full" />
+              <div className="absolute top-0 right-0 w-32 h-32 bg-[#2563FF]/10 blur-3xl rounded-full opacity-0 group-hover:opacity-100 transition-all duration-500" />
 
               <div className="relative z-10 text-center">
                 <div className="w-16 h-16 rounded-2xl bg-[#2563FF]/10 border border-[#2563FF]/20 flex items-center justify-center text-3xl mb-8 mx-auto">
@@ -175,7 +199,7 @@ export default function BarIA() {
                   {kpi.value}
                 </p>
 
-                <h3 className="mt-5 text-xl lg:text-2xl font-bold text-white">
+                <h3 className="mt-5 text-xl lg:text-2xl font-bold">
                   {kpi.title}
                 </h3>
 
@@ -195,7 +219,7 @@ export default function BarIA() {
           </p>
 
           <h2 className="mt-5 text-5xl lg:text-6xl font-black leading-tight">
-            Así de fácil funciona BAR-IA
+            Así de fácil funciona
           </h2>
         </div>
 
@@ -205,30 +229,32 @@ export default function BarIA() {
               icon: "📱",
               title: "Escanea el QR",
               description:
-                "El cliente accede instantáneamente desde su móvil.",
+                "El cliente accede instantáneamente desde la mesa.",
             },
             {
               icon: "🤖",
               title: "Pregunta al asistente",
               description:
-                "BAR-IA recomienda, responde dudas y guía la experiencia.",
+                "BAR-IA recomienda, responde y guía la experiencia.",
             },
             {
               icon: "⭐",
               title: "Más ventas y reseñas",
               description:
-                "Automatiza recomendaciones y mejora la reputación del local.",
+                "Mejora la experiencia y aumenta el ticket medio.",
             },
           ].map((step, index) => (
             <div
               key={index}
-              className="rounded-[2rem] border border-white/10 bg-white/[0.03] p-10 text-center hover:border-[#2563FF]/30 transition-all duration-300"
+              className="group rounded-[2rem] border border-white/10 bg-white/[0.03] backdrop-blur-xl p-10 text-center hover:border-[#2563FF]/30 transition-all duration-300 hover:-translate-y-2"
             >
-              <div className="w-20 h-20 rounded-3xl bg-[#2563FF]/10 border border-[#2563FF]/20 flex items-center justify-center text-4xl mx-auto mb-8">
+              <div className="w-20 h-20 rounded-3xl bg-[#2563FF]/10 border border-[#2563FF]/20 flex items-center justify-center text-4xl mx-auto mb-8 group-hover:scale-110 transition-all duration-300">
                 {step.icon}
               </div>
 
-              <h3 className="text-2xl font-bold">{step.title}</h3>
+              <h3 className="text-2xl font-bold">
+                {step.title}
+              </h3>
 
               <p className="mt-4 text-neutral-400 leading-relaxed">
                 {step.description}
@@ -245,25 +271,21 @@ export default function BarIA() {
           </p>
 
           <h2 className="mt-5 text-5xl lg:text-6xl font-black leading-tight">
-            Mucho más que una carta digital.
+            Mucho más que una carta digital
           </h2>
-
-          <p className="mt-6 text-xl text-neutral-400 leading-relaxed">
-            Una plataforma creada para bares y restaurantes que quieren destacar.
-          </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((feature, index) => (
             <div
               key={index}
-              className="rounded-[2rem] border border-white/10 bg-white/[0.03] p-8 hover:border-[#2563FF]/30 transition-all duration-300"
+              className="group rounded-[2rem] border border-white/10 bg-white/[0.03] backdrop-blur-xl p-8 hover:border-[#2563FF]/30 transition-all duration-300 hover:-translate-y-2"
             >
-              <div className="w-16 h-16 rounded-2xl bg-[#2563FF]/10 border border-[#2563FF]/20 flex items-center justify-center text-3xl mb-8">
+              <div className="w-16 h-16 rounded-2xl bg-[#2563FF]/10 border border-[#2563FF]/20 flex items-center justify-center text-3xl mb-8 group-hover:scale-110 transition-all duration-300">
                 {feature.icon}
               </div>
 
-              <h3 className="text-2xl font-bold text-white">
+              <h3 className="text-2xl font-bold">
                 {feature.title}
               </h3>
 
@@ -275,30 +297,32 @@ export default function BarIA() {
         </div>
       </section>
 
-      <section className="relative z-10 max-w-7xl mx-auto px-6 pb-28">
-        <div className="rounded-[2.5rem] border border-[#2563FF]/20 bg-gradient-to-r from-[#2563FF]/20 via-[#2563FF]/10 to-transparent p-12 lg:p-16 flex flex-col lg:flex-row items-center justify-between gap-10 overflow-hidden relative">
-          <div>
+      <section className="relative z-10 max-w-7xl mx-auto px-6 pb-32">
+        <div className="relative overflow-hidden rounded-[3rem] border border-[#2563FF]/20 bg-gradient-to-r from-[#2563FF]/20 via-[#2563FF]/10 to-transparent p-14 lg:p-20">
+          <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#2563FF]/20 blur-[140px] rounded-full" />
+
+          <div className="relative z-10 max-w-4xl">
             <p className="text-sm tracking-[0.25em] uppercase text-[#2563FF] font-semibold">
-              ¿LISTO PARA DAR EL SIGUIENTE PASO?
+              ¿LISTO PARA EMPEZAR?
             </p>
 
-            <h2 className="mt-5 text-4xl lg:text-6xl font-black leading-tight max-w-3xl">
+            <h2 className="mt-6 text-5xl lg:text-7xl font-black leading-[0.95]">
               Convierte tus mesas en una experiencia inteligente.
             </h2>
 
-            <p className="mt-6 text-xl text-neutral-300 max-w-2xl leading-relaxed">
-              Solicita tu demo gratuita y descubre cómo BAR-IA puede transformar
-              tu local.
+            <p className="mt-8 text-xl text-neutral-300 max-w-2xl leading-relaxed">
+              Solicita una demo y descubre cómo BAR-IA puede transformar la
+              experiencia de tus clientes.
             </p>
-          </div>
 
-          <a
-            href="https://wa.me/message/WU3DVEAG2LTSE1"
-            target="_blank"
-            className="px-10 py-5 rounded-2xl bg-[#2563FF] hover:bg-blue-500 transition-all duration-300 font-bold text-lg shadow-2xl shadow-blue-500/20 whitespace-nowrap"
-          >
-            Solicitar demo gratuita
-          </a>
+            <a
+              href="https://wa.me/message/WU3DVEAG2LTSE1"
+              target="_blank"
+              className="inline-flex mt-10 px-10 py-5 rounded-2xl bg-[#2563FF] hover:bg-blue-500 transition-all duration-300 font-bold text-lg shadow-2xl shadow-blue-500/20 hover:scale-105"
+            >
+              Solicitar demo gratuita
+            </a>
+          </div>
         </div>
       </section>
 
@@ -307,14 +331,34 @@ export default function BarIA() {
           <img
             src="/logo_blanco.png"
             alt="BAR-IA"
-            className="h-16 w-auto object-contain"
+            className="h-14 w-auto object-contain"
           />
 
-          <p className="text-neutral-500 text-center lg:text-right text-sm">
-            IA para bares y restaurantes • Automatización • Sistemas • Resultados
-          </p>
+          <div className="text-center lg:text-right">
+            <p className="text-neutral-400 text-sm">
+              contacto@bar-ia.com
+            </p>
+
+            <p className="text-neutral-600 text-sm mt-2">
+              IA para bares y restaurantes
+            </p>
+          </div>
         </div>
       </footer>
+
+      <style jsx global>{`
+        @keyframes float {
+          0% {
+            transform: translateY(0px);
+          }
+          50% {
+            transform: translateY(-12px);
+          }
+          100% {
+            transform: translateY(0px);
+          }
+        }
+      `}</style>
     </div>
   )
 }
